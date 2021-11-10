@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Função main() e printf()
+
 int main(void){
     int retorno = 0;
 
