@@ -1,6 +1,8 @@
 #include <stdio.h>  // Comando pré processador que importa a biblioteca da função printf
 // Podemos importar coisas usando esse comando: #include "arquivo.sh"
 
+// Função main() e printf()
+
 int main(void){
   // variável retorno recebe um valor inteiro = 0
   int retorno = 0;
