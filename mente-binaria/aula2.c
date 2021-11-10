@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Função main() e printf()
+// Variáveis boolean e do tipo char
 
 int main(void){
     int retorno = 0;
