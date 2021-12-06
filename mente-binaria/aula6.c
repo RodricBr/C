@@ -16,6 +16,7 @@
   % : operador de resto de divisão
   ++ : operador de incremento
   -- : operador de decremento
+  == : operador de avaliação
 */
 
 int main(void){
