@@ -17,6 +17,12 @@
   ++ : operador de incremento
   -- : operador de decremento
   == : operador de avaliação
+  != : operador de diferente
+  !  : operador de negação
+  >  : operador de maior que
+  <  : operador de menor que
+  >= : operador de maior ou igual (Disjunção aplicada no operador (aula 7))
+  <= : operador de menor ou igual
 */
 
 int main(void){
