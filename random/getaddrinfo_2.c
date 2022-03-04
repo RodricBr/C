@@ -48,5 +48,9 @@ int main(int argc, char const *argv[]) {
     getnameinfo(tmp->ai_addr, tmp->ai_addrlen, host, sizeof(host), NULL, 0, 0);
   }
   freeaddrinfo(res);
+  // A diferença entre usar o return 1 do exit code para usar o EXIT_FAILURE, é
+  // Apenas EXIT_FAILURE é o valor padrão para retornar a terminação malsucedida,
+  // mas 1 é usado para o mesmo em muitas implementações. Então, para resumir:
+  // Se você deseja escrever código perfeitamente portátil, use EXIT_FAILURE para caso de falha.
   exit(EXIT_FAILURE);
 }
