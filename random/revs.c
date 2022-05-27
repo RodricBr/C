@@ -58,6 +58,8 @@ int main(int argc, char *argv[]){
       printf(">> zSh:\nzsh -c 'zmodload zsh/net/tcp && ztcp %s %s && zsh >&$REPLY 2>&$REPLY 0>&$REPLY'", argv[1], argv[2]);
       break;
     default:
+      // Default é uma parte opicional do case, se o usuário não escolheu um valor de 1 a 8,
+      // ele irá printar "Opção errada!" e sairá do programa com exit code 1 (erro)
       printf("Opção errada!");
       return 1;
     }
