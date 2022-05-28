@@ -13,11 +13,13 @@ __asm (
   "movw $0x736c, 12(%rsp)\n" // "ls" em hexadecimal
   "leaq 7(%rsp), %rdi\n" // Primeiro argumento para o execve é o nome do arquivo
 
-  "pushq %rdx\n"
-  "push %rdi\n"
+  "pushq %rdx\n" // Pushando(push) valor nulo(NULL) para a pilha(stack), terminador do argv.
+  "push %rdi\n" // "argv[0]"
 
-  "mov %rsp, %rsi\n"
-
+  "mov %rsp, %rsi\n" // Segundo argumento para o execve é argv
+  
+  // Copiando 59 para o rax, definindo número da syscall para o execve
+  // Evitando byte zero
   "xor %eax, %eax\n"
   "movb $59, %al\n"
   "syscall"
