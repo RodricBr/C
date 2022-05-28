@@ -1,6 +1,9 @@
 // Aluns compiladores vão interpretar só
 // se estiver escrito como "__asm__" ou "asm"
 
+// Invocando código assembly dentro de um programa
+// C. PS: as instruções devem ficar dentro de aspas.
+
 __asm (
   "xor %rdx, %rdx\n" // Terceiro argumento do execve é envp, setado para nulo (NULL)
   "push %rdx\n" // Terminador zero (zero terminator)
