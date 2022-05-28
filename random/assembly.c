@@ -2,7 +2,8 @@
 // se estiver escrito como "__asm__" ou "asm"
 
 // Invocando código assembly dentro de um programa
-// C. PS: as instruções devem ficar dentro de aspas.
+// C. PS: as instruções devem ficar dentro de aspas e
+//        o \n(quebra de linha) é importante.
 
 __asm (
   "xor %rdx, %rdx\n" // Terceiro argumento do execve é envp, setado para nulo (NULL)
