@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
+// Dica:
+// No arquivo "revs.c", nesse mesmo diretório, eu dei
+// informações mais detalhadas à respeito do argc e do argv!
+// Dá uma olhada lá.
+
 int main(int argc, char *argv[]){
   // Criando uma variável chamada contador com valor int
   int contador;
