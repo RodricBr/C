@@ -4,7 +4,9 @@
 // Função main() e printf()
 
 int main(void){
-  // variável retorno recebe um valor inteiro = 0
+  // Exemplo de variável: int a;
+  // Por padrão, esse bit tem o valor 0, ou seja, desativado.
+  // Variável retorno recebe um valor inteiro = 0
   int retorno = 0;
 
   // int == função que retorna algo(int == número inteiro de 32bits) 
